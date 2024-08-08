@@ -12,8 +12,6 @@ getWeather.addEventListener('click', () => {
 
         let weatherData = await data.json();
         
-        console.log(weatherData);
-        
         try {
 
             display.innerHTML = `<h1 id="deg">${weatherData.current.temp_c}&deg; C</h1>
